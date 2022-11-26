@@ -2,63 +2,271 @@
 <html>
   <head>
     <title>YouTube.com Clone</title>
-   <link rel="stylesheet" href="youtube.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles/general.css">
+<link rel="stylesheet" href="styles/header.css">
+<link rel="stylesheet" href="styles/video.css">
+    
+</head>
+   <!--<link rel="stylesheet" href="youtube.css"> -->
     <body>
-      <input class="search-bar" type="text" placeholder="Search">
-      
-      <!--
-      <p class="survey">Thanks for chatting with our
-        customer support! Would you like 
-        to take a survey?</p>
-       <button>Yes</button>
-       <button>No</button>
+      <div class="header">
+        <div class="left-section">
+          <img class="hamburger-menu"
+          src="icons/hamburger-menu.svg">
 
-       <p class="google" >Google</p>
-       <input class="first-name" type="text" placeholder="First- Name ">
-       <input class=="last-name" type="text" placeholder="Last Name">
-       <input class="email" type="text" placeholder="Email">
-       <button class="sign-in">Sign in</button>
+          <img class="youtube-logo" 
+          src="icons/youtube-logo.svg" >
+        </div>
+        <div class="middle-section"><input class="search-bar" type="text" placeholder="Search">
+        <button class="search-button">
+          <img class="search-icon" 
+          src="icons/search.svg">
+        </button>
+        <button class="voice-search-button" >
+          <img class="voice-search-icon"
+          src="icons/voice-search-icon.svg">
+        </button>
+        </div>
+        <div class="right-section">
+          <img class="upload-icon" 
+          src="icons/upload.svg">
+          <img class="apps-icon" 
+          src="icons/youtube-apps.svg" >
+          <img class="notifications-icon" 
+          src="icons/notifications.svg">
+          <img class="channel-picture" 
+          src="channel-pics/channels-9.jpg">
+        </div>
+        
+      </div>
+     
 
-       <input class="name" type="text" placeholder="Name">
-      <input class="email" type="text" placeholder="Email">
-
-
-      -->
+      <div class="video-grid">
+        <!-- ================================Thumbnail 1-->
      <div class="video-preview">
-      <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
-      
 
-      <p class="video-title">
-        Talking Tech and <strong>AI with</strong> Google CEO Sundar Pichai!
-      </p>
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+      </div>
+      <div class="video-info-grid">
 
-      <p class="video-author">
-        Marques Brownlee
-      </p>
+        <div class="channel-picture">
+          <img class="profile-picture" src="channel-pics/channel-1.jpeg">
+        </div>
+        <div class="video-info">
+          <p class="video-title">
+            Talking Tech and <strong>AI with</strong> Google CEO Sundar Pichai!
+          </p>
+    
+          <p class="video-author">
+            Marques Brownlee
+          </p>
+    
+          <p class="video-stats">
+            3.4M views &#183; 6 months ago
+          </p>
+        </div>
+      </div>
+     </div>
+<!-- ================================Thumbnail 2-->
+     <div class="video-preview">
 
-      <p class="video-stats">
-        3.4M views &#183; 6 months ago
-      </p>
-      
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
+      </div>
+      <div class="video-info-grid">
+
+        <div class="channel-picture">
+          <img class="profile-picture" src="channel-pics/channel-2.jpeg">
+        </div>
+        <div class="video-info">
+          <p class="video-title">
+            Try Not To Laugh Challenge #9
+          </p>
+    
+          <p class="video-author">
+            Markiplier
+          </p>
+    
+          <p class="video-stats">
+            19M views &#183; 4 years ago
+          </p>
+        </div>
+      </div>
+     </div>
+<!-- ================================Thumbnail 3-->
+     <div class="video-preview">
+
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="thumbnails/thumbnail-3.webp">
+      </div>
+      <div class="video-info-grid">
+
+        <div class="channel-picture">
+          <img class="profile-picture" src="channel-pics/channel-3.jpg">
+        </div>
+        <div class="video-info">
+          <p class="video-title">
+            Qatar World Cup 2022 Opening Ceremony!
+          </p>
+    
+          <p class="video-author">
+            Spirit News
+          </p>
+    
+          <p class="video-stats">
+            294K views &#183; 5 days ago
+          </p>
+        </div>
+      </div>
      </div>
 
+<!-- ===============================================4humbnail 4-->
      <div class="video-preview">
-      <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
-      
 
-      <p class="video-title">
-        Try Not To Laugh Challenge #9
-      </p>
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="thumbnails/thumbnail-4.webp">
+      </div>
+      <div class="video-info-grid">
 
-      <p class="video-author">
-        Markiplier
-      </p>
-
-      <p class="video-stats">
-        19M views &#183; 4 years ago
-      </p>
-      
+        <div class="channel-picture">
+          <img class="profile-picture" src="channel-pics/channel-4.jpeg">
+        </div>
+        <div class="video-info">
+          <p class="video-title">
+            Greater Speaches ever|steve Jobs
+          </p>
+    
+          <p class="video-author">
+            Techno Motivation
+          </p>
+    
+          <p class="video-stats">
+            89M views &#183; 3 years ago
+          </p>
+        </div>
+      </div>
      </div>
+     <!-- ========================================================Thumbnail 5-->
+
+     <div class="video-preview">
+
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="thumbnails/thumbnail-5.webp">
+      </div>
+      <div class="video-info-grid">
+
+        <div class="channel-picture">
+          <img class="profile-picture" src="channel-pics/channel-5.jpeg">
+        </div>
+        <div class="video-info">
+          <p class="video-title">
+            Python Advanced Programming
+          </p>
+    
+          <p class="video-author">
+            Simplelearn
+          </p>
+    
+          <p class="video-stats">
+            456K views &#183; 1 year ago
+          </p>
+        </div>
+      </div>
+     </div>
+
+     <!-- ========================================================Thumbnail 6-->
+
+     <div class="video-preview">
+
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="thumbnails/thumbnail-6.webp">
+      </div>
+      <div class="video-info-grid">
+
+        <div class="channel-picture">
+          <img class="profile-picture" src="channel-pics/channel-6.jpeg">
+        </div>
+        <div class="video-info">
+          <p class="video-title">
+            Sights and Sound of Ethiopia Beautiful Oromia the Land of Diverse Beauty
+          </p>
+    
+          <p class="video-author">
+            2nacheki
+          </p>
+    
+          <p class="video-stats">
+            6.1K views &#183; 2 months ago
+          </p>
+        </div>
+      </div>
+     </div>
+
+      <!-- ========================================================Thumbnail 7-->
+
+      <div class="video-preview">
+
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-7.webp">
+        </div>
+        <div class="video-info-grid">
+  
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-pics/channel-7.jpeg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              SAddis Ababa friendship park - Attractions | Travel Video
+            </p>
+      
+            <p class="video-author">
+              Office Of the Prime Minister
+            </p>
+      
+            <p class="video-stats">
+              400 views &#183; 7 months ago
+            </p>
+          </div>
+        </div>
+       </div>
+
+       <!-- ========================================================Thumbnail 8-->
+
+      <div class="video-preview">
+
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-8.webp">
+        </div>
+        <div class="video-info-grid">
+  
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-pics/channel-8.jpeg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Unity Park Addis Ababa Ethiopia
+            </p>
+      
+            <p class="video-author">
+              Office of the Prime Minister
+            </p>
+      
+            <p class="video-stats">
+              414K views &#183; 9 months ago
+            </p>
+          </div>
+        </div>
+       </div>
+
+      </div>
+    
+
+
     </body>
-  </head>
+ 
 </html>
