@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .grid2{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr  1fr;
+        column-gap: 16px;
+        row-gap: 40px;
+        /*margin-left: 100px;*/
+        margin-right: 20px;
+        margin-top: 30px;
+      }
+
+          .thumbnail-row{
+      margin-bottom: 10px;
+      position: relative;
+      
+      }
+
+          .thumbnail{
+              width: 200px;
+              height: 200px;
+              margin-left: 20px;
+              margin-top: 20px;
+              background-color: black;
+              
+                }
+
+                .discount{
+                  background-color: black;
+                
+                  color: white;
+                  position: absolute;
+                  right: 18px;
+                  top: 30px;
+                  font-family: Roboto,Arial;
+                  font-size: 12px;
+                  font-weight: 500;
+                  padding-left: 4px;
+                  padding-right: 4px;
+                  padding-bottom: 4px;
+                  padding-top: 4px;
+                
+
+                                }
+                .button{
+                
+                  border: 0;
+                  height: 20px;
+                  width: 90px;
+                  position: absolute;
+                  right: 70px;
+                  bottom: 10px;
+                  font-family: Roboto,Arial;
+                  font-size: 12px;
+                  font-weight: 500;
+                  padding-left: 4px;
+                  padding-right: 4px;
+                  padding-bottom: 4px;
+                  padding-top: 4px;
+ 
+                }
+
+    </style>
+    <body>
+      <div class="grid2">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="images/jacket.jpg">
+          <div class="discount">
+           30% OFF
+          </div>
+          <div class="button">
+            <button type="button">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </body>
+  </head>
+</html>

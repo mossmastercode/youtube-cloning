@@ -13,6 +13,7 @@
   border-bottom-style: solid;
   border-bottom-color: rgb(240, 240, 240) ;
   margin-bottom: 200px;
+  z-index: 100;
 }
 
 .left-section{
@@ -22,14 +23,14 @@
 }
 
 .hamburger-menu{
-  height: 25px;
+  height: 20px;
   margin-left: 24px;
   margin-right: 20px;
   cursor: pointer;
 }
 
 .youtube-logo{
-  height: 20px;
+  height: 15px;
   cursor: pointer;
 }
 
@@ -44,15 +45,18 @@
 }
 
 .search-button{
-  height: 40px;
+  height: 34px;
   width: 66px;
   background-color: rgb(240, 240, 240);
   border-width: 1px;
-  border-style: solid;
+  /*border-style: solid;*/
   border-color: rgb(192, 192, 192);
   margin-left: -1px;
   margin-right: 10px;
   cursor: pointer;
+  border-radius: 50px;
+  border-top-left-radius: 0%;
+  border-bottom-left-radius: 0%;
 
 }
 
@@ -63,31 +67,35 @@
   border: none;
   background-color: rgb(248, 248, 248);
   cursor: pointer;
+  border-radius: 50px;
 
 }
 
 .voice-search-icon{
-  height: 24px;
+  height: 20px;
   margin-top: 4px;
   
 }
 
 .search-icon{
-  height: 25px;
+  height: 20px;
   margin-top: 4px;
+  border-radius: 50px;
+
   
 }
 
 .search-bar{
   flex: 1;
-  height: 36px;
+  height: 30px;
   padding-left: 10px;
   font-size: 16px;
   border-width: 1px;
-  border-style: solid;
   border-color: rgb(192, 192, 192);
-  border-radius: 2px;
-  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.5);
+  border-radius: 50px;
+  border-top-right-radius: 0%;
+  border-bottom-right-radius: 0%;
+  /*box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.5);*/
   width: 0;
 }
 
@@ -107,12 +115,12 @@
 }
 
 .upload-icon{
-  height: 24px;
+  height: 22px;
   cursor: pointer;
 }
 
 .apps-icon{
-  height: 24px;
+  height: 22px;
   cursor: pointer;
 }
 
@@ -122,7 +130,31 @@
 }
 
 .channel-picture{
-  height: 35px;
+  height: 30px;
   border-radius: 16px;
   cursor: pointer;
+}
+
+.logo-on-title{
+  background-color: transparent;
+}
+
+.notifications-icon-container{
+  position: relative;
+  cursor: pointer;
+}
+
+.notifications-number{
+  position: absolute;
+  top: -2px;
+  right: -5px;
+  background-color: rgb(200, 0, 0);
+  font-family: Roboto,Arial;
+  color: white;
+  font-size: 11px;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-bottom: 2px;
+  padding-top: 2px;
+  border-radius: 10px;
 }
