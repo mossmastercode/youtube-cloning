@@ -1,7 +1,7 @@
 
       .video-grid{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr  1fr;
+        grid-template-columns: 1fr 1fr 1fr  1fr ;
         column-gap: 16px;
         row-gap: 40px;
         /*margin-left: 100px;*/
@@ -10,7 +10,7 @@
       }
 
       .thumbnail{
-        height: 115px;  /*can be removed*/
+        height: 100%;  /*can be removed*/
         width: 100%;
         border-radius: 10px;
       }

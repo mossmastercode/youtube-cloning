@@ -34,3 +34,30 @@
   font-size: 8px;
 
 }
+
+.home-side-bar{
+  display: flex;
+  position: relative;
+  justify-content: left;
+}
+
+.home-side-bar .tooltip{
+  position: absolute;
+  font-family: Roboto,Arial;
+  background-color: lightgray;
+  font-size: 11px;
+  margin-left: 45px;
+  border-width: 8px;
+  white-space: nowrap;
+  margin-left: 10px;
+  border-width: 10px;
+  margin-top: 12px;
+  border-radius: 2px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.sidebar-link:hover .tooltip{
+  opacity: 1;
+  transition:opacity 0.5;
+}
