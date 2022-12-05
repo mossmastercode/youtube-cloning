@@ -1,5 +1,6 @@
 const tabs=document.querySelectorAll(".categories button");
 const rightArrow=document.querySelector(".categories .right-arrow svg");
+const leftArrow=document.querySelector(".categories .left-arrow svg");
 
 const tabsList=document.querySelector(".categories section");
 const leftArrowContainer=document.querySelector(".categories .left-arrow");
@@ -18,6 +19,15 @@ const manageIcons = () => {
     else{
       leftArrowContainer.classList.remove("active");
     }
+    let maxScrollValue=tabsList.scrollWidth - tabsList.clientWidth - 20;
+    console.log("scroll width: ", tabsList.scrollWidth);
+    console.log("client width: ", tabsList.clientWidth);
+
+    if(tabsList.scrollLeft >= maxScrollValue){
+      rightArrowContainer.classList.remove("active");
+    }else{
+      rightArrowContainer.classList.add("active");
+    }
 };
 
 tabs.forEach((tab) =>{
@@ -31,3 +41,10 @@ rightArrow.addEventListener("click", () => {
   tabsList.scrollLeft +=200;
   manageIcons();
 });
+
+leftArrow.addEventListener("click", () => {
+  tabsList.scrollLeft -=200;
+  manageIcons();
+});
+
+tabsList.addEventListener("scroll", manageIcons);
